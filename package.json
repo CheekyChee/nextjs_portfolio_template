@@ -2,16 +2,18 @@
   "name": "portfolio-nextjs",
   "version": "0.1.0",
   "private": true,
+  "author": "Chhay Socheret",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start:dev": "next dev",
+    "start:build": "next build",
+    "start:start": "next start",
+    "start:lint": "next lint"
   },
   "dependencies": {
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-icons": "^4.4.0"
   },
   "devDependencies": {
     "@types/node": "17.0.40",
