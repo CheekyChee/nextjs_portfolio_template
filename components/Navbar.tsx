@@ -1,10 +1,11 @@
+import React, { useState } from 'react';
+import useBreakpoint from 'antd/lib/grid/hooks/useBreakpoint';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import useBreakpoint from 'antd/lib/grid/hooks/useBreakpoint';
+
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   const screens = useBreakpoint();
