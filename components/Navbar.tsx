@@ -4,42 +4,48 @@ import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-
+import useBreakpoint from 'antd/lib/grid/hooks/useBreakpoint';
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
-
+  const screens = useBreakpoint();
   const handleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
 
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-3 2xl:px-16">
         <Image
           alt="logo"
           src={'/../public/assets/SocheretLogo.png'}
-          width="100"
-          height="50"
+          width={screens.md ? '100' : '50'}
+          height={screens.md ? '50' : '25'}
         />
         {/* navbar list items */}
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-10 text-sm uppercase hover:border-b border-[#5651e5] ease-in-out duration-200">
+                Home
+              </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="ml-10 text-sm uppercase hover:border-b border-[#5651e5] ease-in-out duration-200">
+                About
+              </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-10 text-sm uppercase hover:border-b border-[#5651e5] ease-in-out duration-200">
+                Skills
+              </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:border-b border-[#5651e5] ease-in-out duration-200">
                 Projects
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:border-b border-[#5651e5] ease-in-out duration-200">
                 Contact
               </li>
             </Link>
