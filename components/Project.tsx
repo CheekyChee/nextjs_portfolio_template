@@ -5,7 +5,7 @@ import { NextPage } from 'next';
 const Project: NextPage = () => {
   // md:grid-cols-2 means anything above medium screen will span 2 col and anything below medium screen will span 1 col
   return (
-    <div className="w-full ">
+    <div id="projects" className="w-full lg:h-screen p-4">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#5651e1]">
           Projects
@@ -15,7 +15,7 @@ const Project: NextPage = () => {
           <ProjectCardComponent
             imageSrc={krubkrongImg}
             alt="/krubkrong"
-            linkUrl={'/'}
+            linkUrl={'/KrubKrongProject'}
             title="KrubKrong SMS"
             description="ReactJS"
             linkInfoText="More Info"
@@ -23,7 +23,7 @@ const Project: NextPage = () => {
           <ProjectCardComponent
             imageSrc={krubkrongImg}
             alt="/gogym"
-            linkUrl={'/'}
+            linkUrl={'/GoGymProject'}
             title="GoGym POS"
             description="ReactJS"
             linkInfoText="More Info"

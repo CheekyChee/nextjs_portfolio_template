@@ -1,4 +1,4 @@
-## currently reached 53:06 / 2:32 hours
+## currently reached 1:21:20 / 2:32 hours
 
 continue tmr
 
