@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { FC, Fragment } from 'react';
 
 export interface SkillCardComponentProps {
-  imageSrc: string;
+  imageSrc: string | StaticImageData;
   title: string;
   imageAlt: string;
 }
@@ -10,9 +10,9 @@ export interface SkillCardComponentProps {
 export const SkillCardComponent: FC<SkillCardComponentProps> = (props) => {
   return (
     <Fragment>
-      <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+      <div className="p-6 duration-300 ease-in shadow-xl rounded-xl hover:scale-105">
         {/* card grid */}
-        <div className="grid grid-cols-2 justify-center items-center">
+        <div className="grid items-center justify-center grid-cols-2">
           <div className="m-auto">
             <Image
               alt={props.imageAlt}

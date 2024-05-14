@@ -6,7 +6,8 @@ import { useRouter } from 'next/router';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-
+import csLogoWhitepng from '../public/assets/csLogoWhite.png';
+import socheretpng from '../public/assets/SocheretLogo.png';
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   const [shadow, setShadow] = useState<boolean>(false);
@@ -56,15 +57,11 @@ const Navbar = () => {
           : 'fixed w-full h-20 z-[100] '
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-3 2xl:px-16">
+      <div className="flex items-center justify-between w-full h-full px-3 2xl:px-16">
         <Link href="/">
           <Image
             alt="logo"
-            src={
-              csLogoWhite
-                ? '/../public/assets/csLogoWhite.png'
-                : '/../public/assets/SocheretLogo.png'
-            }
+            src={csLogoWhite ? csLogoWhitepng : socheretpng}
             width={screens.md ? '100' : '50'}
             height={screens.md ? '50' : '25'}
             className="cursor-pointer"
@@ -129,10 +126,10 @@ const Navbar = () => {
         >
           {/* top section */}
 
-          <div className="flex w-full items-center justify-between">
+          <div className="flex items-center justify-between w-full">
             <Link href={'/'}>
               <Image
-                src={'/../public/assets/SocheretLogo.png'}
+                src={socheretpng}
                 alt="logo"
                 width={'70'}
                 height="35"
@@ -142,19 +139,19 @@ const Navbar = () => {
 
             <div
               onClick={handleNav}
-              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+              className="p-3 rounded-full shadow-lg cursor-pointer shadow-gray-400"
             >
               <AiOutlineClose size={25} />
             </div>
           </div>
           {/* sidebar main text */}
-          <div className="border-b border-gray-300 my-4">
+          <div className="my-4 border-b border-gray-300">
             <p className="w-[85%] md:w-[90%] py-4">
               {"Let's build something cool together"}
             </p>
           </div>
           {/* sidebar menu */}
-          <div className="py-4 flex flex-col">
+          <div className="flex flex-col py-4">
             <ul className="uppercase">
               <Link href="/">
                 <li
@@ -203,16 +200,16 @@ const Navbar = () => {
                 {"Let's Connect!"}
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 ">
+                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 ">
                   <FaLinkedinIn />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 ">
+                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 ">
                   <FaGithub />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 ">
+                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 ">
                   <AiOutlineMail />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 ">
+                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 ">
                   <BsFillPersonLinesFill />
                 </div>
               </div>
