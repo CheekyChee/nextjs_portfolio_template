@@ -3,7 +3,7 @@ import useBreakpoint from 'antd/lib/grid/hooks/useBreakpoint';
 import { NextPage } from 'next';
 import Image from 'next/image';
 import { ContactIcons } from './mini-components/ContactIcons.component';
-
+import cvphoto from '../public/assets/projects/cv photo.png';
 const Main: NextPage = () => {
   const screens = useBreakpoint();
 
@@ -15,19 +15,19 @@ const Main: NextPage = () => {
         {/* first Text */}
         <div>
           <Image
-            className=" rounded-full border-1 border-[#5651e5]"
-            src="https://avatars.githubusercontent.com/u/37738641?v=4"
+            className=" rounded-md border-1 border-[#5651e5]"
+            src={cvphoto}
             alt="avatar"
-            height={screens.sm ? 115 : 80}
+            height={screens.sm ? 150 : 80}
             width={screens.sm ? 115 : 80}
           />
-          <p className=" pt-2 uppercase text-sm text-gray-600 tracking-widest">
+          <p className="pt-2 text-sm tracking-widest text-gray-600 uppercase ">
             {"LET'S BUILD SOMETHING GREAT TOGETHER!"}
           </p>
-          <h1 className="sm:py-4 py-2 text-gray-700">
+          <h1 className="py-2 text-gray-700 sm:py-4">
             Hello, I'm <span className="text-[#5651e5]">{'Socheret'}</span>
           </h1>
-          <h1 className="sm:py-4 py-2  text-gray-700">
+          <h1 className="py-2 text-gray-700 sm:py-4">
             {' '}
             A {'Front-End Web Developer'}
           </h1>

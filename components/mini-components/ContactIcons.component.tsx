@@ -24,12 +24,12 @@ export const ContactIcons: FC<ContactIconsProps> = () => {
       >
         <FaGithub size={20} />
       </div>
-      {/* <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 ">
+      <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 ">
         <AiOutlineMail size={20} />
       </div>
       <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 ">
         <BsFillPersonLinesFill size={20} />
-      </div> */}
+      </div>
     </Fragment>
   );
 };
