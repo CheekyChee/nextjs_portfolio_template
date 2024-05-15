@@ -8,7 +8,7 @@ const About = () => {
     // container
     <div
       id="about"
-      className="w-full md:h-screen p-2 px-4 flex items-center py-16"
+      className="flex items-center w-full p-2 px-4 py-16 md:h-screen"
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
@@ -26,17 +26,16 @@ const About = () => {
           <p className="py-2 text-gray-600">
             I was immediately intrigued to learn more about programming because
             of how complex it can be. I began learning JavaScript and became
-            even more enthusiastic about creating interactive websites. After
-            that, I began freelancing for e-commerce businesses using the
-            Shopify platform. Now I spend my time studying new technologies and
-            creating apps with ReactJS or NextJS.
+            even more enthusiastic about creating interactive websites. Now I
+            spend my time studying new technologies and creating apps with
+            ReactJS or NextJS.
           </p>
           <p className="py-2 text-gray-600 underline cursor-pointer">
             {' '}
             Checkout out some of the projects I've built
           </p>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex justify-center items-center p-4 hover:scale-105 ease-in duration-300">
+        <div className="flex items-center justify-center w-full h-auto p-4 m-auto duration-300 ease-in shadow-xl shadow-gray-400 rounded-xl hover:scale-105">
           <img
             src="https://images.unsplash.com/photo-1608306448197-e83633f1261c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
             alt="/"
