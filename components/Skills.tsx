@@ -7,6 +7,9 @@ import jsImage from '../public/assets/skills/javascript.png';
 import reactImage from '../public/assets/skills/react.png';
 import tailwindImage from '../public/assets/skills/tailwind.png';
 import githubImage from '../public/assets/skills/github1.png';
+import nextjsIcon from '../public/assets/skills/nextjs-logo.png';
+import laravelLogo from '../public/assets/skills/laravel-logo.png';
+
 const Skills = () => {
   const skillsets = [
     {
@@ -26,8 +29,16 @@ const Skills = () => {
       title: 'React',
     },
     {
+      imageSrc: nextjsIcon,
+      title: 'NextJS',
+    },
+    {
       imageSrc: tailwindImage,
       title: 'Tailwind',
+    },
+    {
+      imageSrc: laravelLogo,
+      title: 'Laravel',
     },
     {
       imageSrc: githubImage,
