@@ -6,7 +6,7 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import { ContactIcons } from './mini-components/ContactIcons.component';
 const Contact = () => {
   return (
-    <div className="w-full p-4 lg:h-screen " id="contact">
+    <div className="w-full p-4 lg:h-screen" id="contact">
       {/* container */}
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e1]">
