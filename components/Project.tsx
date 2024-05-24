@@ -8,7 +8,7 @@ import { NextPage } from 'next';
 const Project: NextPage = () => {
   // md:grid-cols-2 means anything above medium screen will span 2 col and anything below medium screen will span 1 col
   return (
-    <div id="projects" className="w-full p-4 mb-48 lg:h-screen">
+    <div id="projects" className="w-full p-4 md:mb-48 mb-28 lg:h-screen">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#5651e1]">
           Projects
